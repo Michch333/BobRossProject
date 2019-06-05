@@ -1,3 +1,35 @@
+#headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 210px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+.colorButtons {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#redButton {
+    background-color: red;
+}
+
+#greenButton {
+    background-color: green;
+}
+
+#blueButton {
+    background-color: blue;
+}
 #gridContainer {
     width: 800px;
     margin: 0 auto;
@@ -14,3 +46,4 @@
     margin-bottom: 5px;
     margin-right: 5px;
 }
+
