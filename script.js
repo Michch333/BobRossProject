@@ -13,7 +13,6 @@ redBtn.addEventListener("click", function(){
     redBtn.style.borderColor = ("white");
     blueBtn.style.borderColor = ("black");
     greenBtn.style.borderColor = ("black");
-    // console.log(selectedColor);
 });
 
 greenBtn.addEventListener("click", function(){
@@ -21,7 +20,6 @@ greenBtn.addEventListener("click", function(){
     redBtn.style.borderColor = ("black");
     blueBtn.style.borderColor = ("black");
     greenBtn.style.borderColor = ("white");
-    // console.log(selectedColor);
 });
 
 blueBtn.addEventListener("click", function(){
@@ -29,7 +27,6 @@ blueBtn.addEventListener("click", function(){
     redBtn.style.borderColor = ("black");
     blueBtn.style.borderColor = ("white");
     greenBtn.style.borderColor = ("black");
-    // console.log(selectedColor);
 });
 
 let currentCardColor = {
@@ -95,22 +92,14 @@ let result2 = getNewColor("blue", "green");
 
 
 
-console.log(result);
-console.log(result2);
-
-// console.log(result);
-
 
 gridParent.addEventListener("click",function(e){
     if(e.target.matches('.gridBlocks')){
         let key = e.target.classList[1];
-        console.log(key);
-        console.log(currentCardColor);
         let cardColor = currentCardColor[key];
         let gridColor = getNewColor(cardColor, selectedColor);
         e.target.style.backgroundColor = gridColor;
         currentCardColor[key] = gridColor;
-        console.log(currentCardColor);
     }
 });
 
