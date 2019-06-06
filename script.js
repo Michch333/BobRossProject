@@ -1,5 +1,5 @@
 let selectedColor;
-let currentColor = "blank";
+let cardColor = "blank";
 
 let redBtn = document.getElementById("redButton");
 let greenBtn = document.getElementById("greenButton");
@@ -30,4 +30,42 @@ blueBtn.addEventListener("click", function(){
     console.log(selectedColor);
 });
 
+
+function getNewColor(_cardColor, _selectedColor) {
+    console.log(_cardColor);
+    console.log(_selectedColor)
+    if ((_cardColor === "blank" || _cardColor === "red") && _selectedColor === "red"){ // BLANK/RED + RED = RED
+        return "red";
+       
+    }
+
+    else if ((_cardColor === "blank" || _cardColor === "green") && _selectedColor === "green"){ // BLANK/GREEN + GREEN = GREEN
+        return "green";
+    }
+
+    else if ((_cardColor === "blank" || _cardColor === "blue") && _selectedColor === "blue"){ // BLANK/BLUE + BLUE = BLUE
+        return "blue";
+    }
+
+    else if ((_cardColor === "brown" || _cardColor === "purple" || _cardColor === "teal") && _selectedColor === "red" || _selectedColor === "green" || _selectedColor === "blue"){ // Sets to black if already brown, purple, or teal
+        return "black";
+    }
+
+    else if (_cardColor === "red" && _selectedColor === "green"){
+        return "brown";
+    }
+
+    else if (_cardColor === "red" && _selectedColor === "blue"){
+        return "purple";
+    }
+
+    else if (_cardColor === "green" && _selectedColor === "blue"){
+        return "teal";
+    }
+
+
+};
+
+let result = getNewColor("blank", "blue");
+console.log(result);
 
