@@ -11,22 +11,34 @@ let gridParent = document.getElementById("gridContainer");
 redBtn.addEventListener("click", function(){
     selectedColor = "red";
     redBtn.style.borderColor = ("white");
+    redBtn.style.backgroundImage = ('url("bross.jpg")');
+    redBtn.style.backgroundSize = "contain";
     blueBtn.style.borderColor = ("black");
+    blueBtn.style.backgroundImage = "none";
     greenBtn.style.borderColor = ("black");
+    greenBtn.style.backgroundImage = "none";
 });
 
 greenBtn.addEventListener("click", function(){
     selectedColor = "green";
     redBtn.style.borderColor = ("black");
+    redBtn.style.backgroundImage = "none";
     blueBtn.style.borderColor = ("black");
+    blueBtn.style.backgroundImage = "none";
     greenBtn.style.borderColor = ("white");
+    greenBtn.style.backgroundImage = ('url("bross.jpg")');
+    greenBtn.style.backgroundSize = "contain";
 });
 
 blueBtn.addEventListener("click", function(){
     selectedColor = "blue";
     redBtn.style.borderColor = ("black");
+    redBtn.style.backgroundImage = "none";
     blueBtn.style.borderColor = ("white");
+    blueBtn.style.backgroundImage =  ('url("bross.jpg")');
+    blueBtn.style.backgroundSize = "contain";
     greenBtn.style.borderColor = ("black");
+    greenBtn.style.backgroundImage = "none";
 });
 
 let currentCardColor = {
