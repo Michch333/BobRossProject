@@ -32,17 +32,17 @@
 }
 #gridContainer {
     width: 800px;
-    margin: 0 auto;
+    margin: 5px auto;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 
 .gridBlocks {
     border: 2px solid black;
     height: 200px;
-    width: 200px;
+    width: 257px;
     margin-bottom: 5px;
     margin-right: 5px;
 }
