@@ -87,8 +87,6 @@ function getNewColor(_cardColor, _selectedColor) {
 
 
 };
-let result = getNewColor("blank", "blue");
-let result2 = getNewColor("blue", "green");
 
 
 
