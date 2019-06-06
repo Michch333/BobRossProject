@@ -5,6 +5,8 @@ let redBtn = document.getElementById("redButton");
 let greenBtn = document.getElementById("greenButton");
 let blueBtn = document.getElementById("blueButton");
 
+let gridParent = document.getElementById("gridContainer");
+
 
 redBtn.addEventListener("click", function(){
     selectedColor = "red";
@@ -29,6 +31,7 @@ blueBtn.addEventListener("click", function(){
     greenBtn.style.borderColor = ("black");
     console.log(selectedColor);
 });
+
 
 
 function getNewColor(_cardColor, _selectedColor) {
@@ -68,4 +71,11 @@ function getNewColor(_cardColor, _selectedColor) {
 
 let result = getNewColor("blank", "blue");
 console.log(result);
+
+
+gridParent.addEventListener("click",function(e){
+    if(e.target.matches('.gridBlocks')){
+        e.target.style.backgroundColor = "Red";
+    }
+});
 
